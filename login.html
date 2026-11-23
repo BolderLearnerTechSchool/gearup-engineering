@@ -14,12 +14,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">⚙</span> GearUp</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#mainNav" 
+        aria-controls="mainNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="btn btn-orange btn-sm px-4 active" aria-current="page" href="login.html">Login</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a 
+                class="btn btn-orange 
+                btn-sm px-4 active" 
+                aria-current="page" 
+                href="login.html">Login
+            </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -43,12 +63,16 @@
               <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required minlength="6">
             </div>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4 small">
-              <label class="form-check-label"><input class="form-check-input me-1" type="checkbox" name="remember"> Remember me</label>
+              <label class="form-check-label">
+                <input class="form-check-input me-1" type="checkbox" name="remember"> Remember me</label>
               <a class="text-orange" href="mailto:hello@gearup.example?subject=Password%20help">Forgot password?</a>
             </div>
             <button class="btn btn-orange w-100" type="submit">Login</button>
           </form>
-          <p class="text-center small mt-4 mb-0">New here? <a class="text-orange fw-semibold" href="mailto:hello@gearup.example?subject=Create%20an%20account">Create an account</a></p>
+        <p 
+            class="text-center small mt-4 mb-0">New here? 
+            <a class="text-orange fw-semibold" href="mailto:hello@gearup.example?subject=Create%20an%20account">Create an account</a>
+        </p>
           <p class="demo-note text-center mt-3 mb-0">Demo form only — it does not create or verify accounts.</p>
         </div>
       </div>
@@ -56,7 +80,14 @@
   </div>
 </main>
 
-<footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2026 GearUp Engineering · Built by Michael</span><span>Made with Bootstrap 5</span></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© 2026 GearUp Engineering · Built by Michael</span>
+        <span>Made with Bootstrap 5</span>
+    </div>
+</footer>
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 </body>
 </html>
