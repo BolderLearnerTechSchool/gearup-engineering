@@ -1,0 +1,83 @@
+/* GearUp Engineering — custom styles */
+:root {
+  --steel: #1c2c50;
+  --steel-dark: #121d35;
+  --orange: #ff7a1a;
+  --cream: #f7f8fc;
+  --ink: #20283a;
+}
+* { box-sizing: border-box; }
+body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; }
+.site-navbar { background: var(--steel-dark); padding: 14px 0; }
+.navbar-brand { letter-spacing: .3px; }
+.brand-mark { color: var(--orange); margin-right: 7px; }
+.nav-link { color: rgba(255,255,255,.78); font-size: .92rem; }
+.nav-link:hover, .nav-link.active { color: #fff; }
+.btn-orange { background: var(--orange); color: #fff; border: 1px solid var(--orange); font-weight: 600; }
+.btn-orange:hover, .btn-orange:focus { background: #e9670c; border-color: #e9670c; color: #fff; }
+.eyebrow { color: var(--orange); font-size: .72rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 12px; }
+.hero {
+  min-height: 560px; position: relative; display: flex; align-items: center;
+  color: #fff; overflow: hidden;
+  background: linear-gradient(110deg, rgba(18,29,53,.94), rgba(28,44,80,.78), rgba(45,35,35,.78)),
+    url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1800&q=90") center/cover;
+}
+.hero::after { content: ""; position: absolute; width: 430px; height: 430px; border: 65px solid rgba(255,122,26,.12); border-radius: 50%; right: -100px; top: -180px; }
+.hero-content { position: relative; z-index: 1; padding-top: 70px; padding-bottom: 70px; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4.7rem); font-weight: 800; line-height: 1.12; }
+.hero h1 span, .page-hero h1 span { color: var(--orange); }
+.hero-copy { max-width: 620px; color: rgba(255,255,255,.8); line-height: 1.8; margin: 20px auto 28px; }
+.section-space { padding: 85px 0; }
+.section-heading h2, .about-section h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; }
+.section-heading > p:last-child { color: #7b8496; }
+.features { background: var(--cream); }
+.feature-card { background: #fff; padding: 35px 28px; border-radius: 16px; box-shadow: 0 8px 30px rgba(22,35,63,.06); transition: transform .25s ease, box-shadow .25s ease; }
+.feature-card:hover { transform: translateY(-8px); box-shadow: 0 16px 35px rgba(22,35,63,.12); }
+.feature-icon { font-size: 2.5rem; margin-bottom: 18px; }
+.feature-card h3 { font-size: 1.1rem; font-weight: 700; }
+.feature-card p { color: #7b8496; font-size: .9rem; line-height: 1.8; margin-bottom: 0; }
+.about-image { width: 100%; min-height: 330px; max-height: 410px; object-fit: cover; border-radius: 16px; box-shadow: 18px 18px 0 rgba(255,122,26,.12); }
+.about-section p:not(.eyebrow) { line-height: 1.9; }
+.check-list { list-style: none; padding-left: 0; color: #596276; line-height: 2.1; }
+.check-list li::before { content: "✓"; color: var(--orange); font-weight: 800; margin-right: 10px; }
+.stats-section { background: var(--steel); color: #fff; padding: 55px 0; }
+.stat-number { color: var(--orange); font-size: 2.8rem; line-height: 1.1; font-weight: 800; }
+.stats-section p { color: rgba(255,255,255,.72); margin: 8px 0 0; font-size: .85rem; }
+.cta-section { background: var(--orange); color: #fff; padding: 65px 0; }
+.cta-section h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; }
+.site-footer { background: var(--steel-dark); color: rgba(255,255,255,.68); padding: 22px 0; font-size: .78rem; }
+.page-hero { background: linear-gradient(120deg, var(--steel-dark), var(--steel)); color: #fff; padding: 75px 0 70px; }
+.page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; }
+.page-hero p:last-child { max-width: 580px; color: rgba(255,255,255,.72); line-height: 1.8; }
+.gallery-section { background: var(--cream); }
+.gallery-card { overflow: hidden; background: #fff; border-radius: 13px; box-shadow: 0 7px 25px rgba(22,35,63,.08); transition: transform .25s ease, box-shadow .25s ease; }
+.gallery-card:hover { transform: translateY(-5px); box-shadow: 0 14px 32px rgba(22,35,63,.14); }
+.gallery-image { height: 220px; overflow: hidden; position: relative; background: #dce2ec; }
+.gallery-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.gallery-card:hover .gallery-image img { transform: scale(1.08); }
+.photo-label { position: absolute; top: 12px; left: 12px; color: #fff; background: rgba(18,29,53,.72); padding: 5px 9px; border-radius: 4px; font-size: .6rem; letter-spacing: 1px; }
+.gallery-body { padding: 20px; }
+.gallery-body h2 { font-size: 1.12rem; font-weight: 700; margin: 12px 0 7px; }
+.gallery-body p { color: #778094; font-size: .85rem; line-height: 1.7; margin: 0; }
+.badge-orange { background: #fff0e5; color: #d85b08; }
+.badge-blue { background: #e8efff; color: #345da8; }
+.badge-green { background: #e6f5ec; color: #23804b; }
+.login-page { min-height: 100vh; background: #f2f4f9; }
+.login-section { min-height: calc(100vh - 126px); padding: 65px 0; display: flex; align-items: center; background: linear-gradient(rgba(18,29,53,.83), rgba(18,29,53,.83)), url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1800&q=85") center/cover; }
+.login-card { background: #fff; border-radius: 17px; padding: 38px 34px; box-shadow: 0 20px 55px rgba(0,0,0,.24); }
+.login-symbol { color: var(--orange); font-size: 2rem; text-align: center; }
+.login-card h1 { text-align: center; font-size: 1.65rem; font-weight: 700; }
+.form-label { font-size: .82rem; font-weight: 600; }
+.form-control { padding: 11px 13px; border-color: #dce1ea; font-size: .9rem; }
+.form-control:focus { border-color: var(--orange); box-shadow: 0 0 0 .22rem rgba(255,122,26,.18); }
+.text-orange { color: #e9670c; text-decoration: none; }
+.text-orange:hover { color: #bd4f00; text-decoration: underline; }
+.demo-note { color: #9098a7; font-size: .68rem; }
+@media (max-width: 767.98px) {
+  .hero { min-height: 520px; }
+  .section-space { padding: 62px 0; }
+  .about-image { min-height: 250px; }
+  .gallery-image { height: 210px; }
+  .login-section { padding: 45px 0; }
+  .login-card { padding: 30px 24px; }
+}
