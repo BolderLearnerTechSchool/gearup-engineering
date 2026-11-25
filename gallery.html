@@ -36,7 +36,14 @@ rel="stylesheet">
     <h1>Machine <span>Gallery</span></h1>
     <p class="mx-auto">Explore the machines, tools and structures that shape our world.</p>
   </div>
-</header>
+  <p class="page-text">Nine amazing machines that mechanical engineers design, build and fix.</p>
+
+  <button type="button" class="btn btn-orange mt-2" data-bs-toggle="modal" data-bs-
+  target="#machineOfWeek">
+
+  <i class="bi bi-star-fill"></i> Machine of the Week
+  </button>
+  </header>
 
 <main class="gallery-section section-space">
   <div class="container">
@@ -159,7 +166,28 @@ rel="stylesheet">
     </div>
   </div>
 </main>
-
+<!-- MODAL: Machine of the week (new in v1.1.0) -->
+  <div class="modal fade" id="MachineOfWeek" tableindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class=modal-title><i class="bi bi-star-fill"></i> Machine of the week: Wind Turbine</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+  <div class="modal-body">
+    <img src="/06_bootstrap/images/wind-farm.jpg" class="img-fluid rounded mb-3" alt="Wind turbines in a field">
+    <p>
+      A wind turbine's blades are shaped like aeroplane wings. The wind pushes them round, the
+      turning shaft spins a generator, and the generator makes electricity. One big turbine can power many
+      homes.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-dark-steel" data-s-dismis="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2026 GearUp Engineering · Built by Michael</span><span>Photos: Unsplash · Made with Bootstrap 5</span></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

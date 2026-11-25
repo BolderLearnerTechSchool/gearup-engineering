@@ -118,3 +118,9 @@ body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; 
   border-radius: 12px;
   padding: 10px 20px;
 }
+/* 17. Machine of the Week modal (v1.1.0) */
+.modal-title{
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--orange);
+}
