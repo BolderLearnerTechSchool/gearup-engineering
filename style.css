@@ -103,3 +103,18 @@ body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; 
 .social-icons a:hover {
   color: var(--orange);
 }
+/* ---------- 16. Featured machines carousel (v1.1.0) ---------- */
+.carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.carousel-img {
+  height: 420px;
+  object-fit: cover;
+}
+.carousel-caption {
+  background-color: rgba(28, 35, 51, 0.75);
+  border-radius: 12px;
+  padding: 10px 20px;
+}
