@@ -22,8 +22,17 @@ body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; 
   background: linear-gradient(110deg, rgba(18,29,53,.94), rgba(28,44,80,.78), rgba(45,35,35,.78)),
     url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1800&q=90") center/cover;
 }
-.hero::after { content: ""; position: absolute; width: 430px; height: 430px; border: 65px solid rgba(255,122,26,.12); border-radius: 50%; right: -100px; top: -180px; }
-.hero-content { position: relative; z-index: 1; padding-top: 70px; padding-bottom: 70px; }
+.hero::after { 
+  content: ""; 
+  position: 
+  absolute; width: 430px; 
+  height: 430px; 
+  border: 65px solid rgba(255,122,26,.12); border-radius: 50%; right: -100px; top: -180px; }
+.hero-content { position: relative; 
+  z-index: 1; 
+  padding-top: 70px; 
+  padding-bottom: 70px; 
+}
 .hero h1 { font-size: clamp(2.5rem, 6vw, 4.7rem); font-weight: 800; line-height: 1.12; }
 .hero h1 span, .page-hero h1 span { color: var(--orange); }
 .hero-copy { max-width: 620px; color: rgba(255,255,255,.8); line-height: 1.8; margin: 20px auto 28px; }
@@ -33,7 +42,11 @@ body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; 
 .features { background: var(--cream); }
 .feature-card { background: #fff; padding: 35px 28px; border-radius: 16px; box-shadow: 0 8px 30px rgba(22,35,63,.06); transition: transform .25s ease, box-shadow .25s ease; }
 .feature-card:hover { transform: translateY(-8px); box-shadow: 0 16px 35px rgba(22,35,63,.12); }
-.feature-icon { font-size: 2.5rem; margin-bottom: 18px; }
+.feature-icon {  
+  font-size: 3rem;
+  color: var(--orange); 
+  margin-bottom: 10px;
+}
 .feature-card h3 { font-size: 1.1rem; font-weight: 700; }
 .feature-card p { color: #7b8496; font-size: .9rem; line-height: 1.8; margin-bottom: 0; }
 .about-image { width: 100%; min-height: 330px; max-height: 410px; object-fit: cover; border-radius: 16px; box-shadow: 18px 18px 0 rgba(255,122,26,.12); }
@@ -80,4 +93,34 @@ body { font-family: "Poppins", sans-serif; color: var(--ink); background: #fff; 
   .gallery-image { height: 210px; }
   .login-section { padding: 45px 0; }
   .login-card { padding: 30px 24px; }
+}
+/* ---------- 15. Bootstrap Icons in the footer (v1.1.0) ---------- */
+.social-icons a {
+  color: #c9d1e3;
+  font-size: 1.4rem;
+  margin: 0 8px;
+}
+.social-icons a:hover {
+  color: var(--orange);
+}
+/* ---------- 16. Featured machines carousel (v1.1.0) ---------- */
+.carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.carousel-img {
+  height: 420px;
+  object-fit: cover;
+}
+.carousel-caption {
+  background-color: rgba(28, 35, 51, 0.75);
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+/* 17. Machine of the Week modal (v1.1.0) */
+.modal-title{
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--orange);
 }
